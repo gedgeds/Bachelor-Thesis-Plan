@@ -1,0 +1,118 @@
+\documentclass{VUMIFPSkursinis}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{longtable}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+
+\usepackage[tableposition=top]{caption}
+%PAKEISTA, tarpai tarp sąrašo elementų
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\setenumerate{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% Titulinio aprašas
+\university{Vilniaus universitetas}
+\faculty{Matematikos ir informatikos fakultetas}
+\department{Programų sistemų katedra}
+\papertype{Bakalauro baigiamojo darbo planas}
+\title{DLT technologijų taikymas tiekimo grandinėse}
+\titleineng{DLT applications in supply chains}
+\status{4 kurso 3 grupės studentas}
+\author{Gediminas Krasauskas}
+\supervisor{Dr. Evaldas Drąsutis}
+\date{Vilnius – \the\year}
+
+% Nustatymai
+% \setmainfont{Palemonas-2.1}   % Pakeisti teksto šriftą į Palemonas (turi būti įdiegtas sistemoje)
+\bibliography{bibliografija}
+
+%--------------------------------------------------------
+%----------------------- PRADŽIA ------------------------
+%--------------------------------------------------------
+
+\begin{document}
+\maketitle
+
+\section{Planas}
+
+Toliau pateikiami baigiamojo darbo tyrimo objektas ir aktualumas, darbo tikslas, keliami uždaviniai ir laukiami rezultatai, tyrimo metodas, numatomas darbo atlikimo procesas, apibūdinami darbui aktualūs literatūros šaltiniai.
+
+\subsection{Tyrimo objektas}
+
+Tyrimo objektas - DLT technologijų panaudojamumas tiekimo grandinėse.
+
+\subsection{Tyrimo aktualumas}
+
+Tiekimo grandinės daro didelę įtaką mūsų kasdieniniam gyvenimui: vyksta nuolatinis produktų judėjimas visame pasaulyje iš vienos vietos į kitą, atliekamos transakcijos tarp verslo šalių, o visa tai lemia milžiniškus informacijos bei pinigų srautus. 
+Modernėjant visuomenei, augant klientų poreikiui ir gerėjant ekonominėms sąlygoms, šie procesai tik labiau intensyvėja, o įmonės siekia tapti pranašesnėmis už konkurentus.
+Dėl to yra svarbu nuolat ieškoti esamų sprendimų gerinimo būdų ir galimybių spręsti šiandienos problemas tiekimo grandinėse.
+
+Pagrindinės problemos yra tos, kad šiandien tiekimo grandinėse naudojamos technologijos turi savų trūkumų, vartotojai ir verslo klientai tikisi didesnio informacijos matomumo, duomenų saugumo, spartesnių ir kokybiškesnių paslaugų, o tai užtikrinti naudojant tradicinius metodus yra sunku.
+
+Vienas iš galimų sprendimų gali būti DLT technologijos, kurios dėl savo savybių pastaruoju metu susilaukė nemažai dėmesio tiek žiniasklaidoje, tiek akademinėse bendruomenėse. Pagrindinės DLT technologijų atmainos, kurias nagrinėsime, yra blokų grandinė ir IOTA platforma. Pastaroji yra nauja DLT atmaina, atsiradusi 2017 metais. Nors daugelis IOTA vertina kaip potencialią inovatorę daiktų interneto srityje, kartu pastebimas potencialas ir tiekimo grandinių kontekste kartu įgalinant ir daiktų internetą.
+
+Neabejotina, kad įmonės, susijusios su tiekimo grandinėmis, bus suinteresuotos gerinti ir spręsti tiek vidinius, tiek išorinius procesus bei problemas, nes tai potencialiai gali padidinti kuriamą pridėtinę vertę. Todėl yra svarbu ieškoti moksliškai pagrįstų technologinių sprendimų, leisiančių pasiekti minėtus dalykus, dėl ko šis tyrimas įgauna aktualumą bei prasmę šiandienos tiekimo grandinių kontekste.
+
+\subsection{Tyrimo tikslas ir uždaviniai}
+
+Šiuo darbu siekiama įvertinti ir sumodeliuoti galimus pokyčius tradiciniuose tiekimo grandinės modeliuose pradėjus naudoti DLT technologijas.
+%ištirti tiekimo grandinių dalykinę sritį ir DLT technologijas, įvertinti, kokią naudą DLT technologijos duotų tiekimo grandinėms. 
+Šiam tikslui pasiekti keliami tokie uždaviniai:
+
+%----------------- UŽDAVINIAI -----------------
+
+\begin{itemize}
+    \item Apžvelgti tiekimo grandinės dalykinę sritį, jos svarbiausias sąvokas, modelius ir naudojamas technologijas;
+    \item Ištirti DLT technologijų idėją ir atmainas: blokų grandinę ir IOTA, jas palyginti;
+    \item Sukonstruoti tiekimo grandinės modelį pritaikius IOTA technologiją ir palyginti jį su tradiciniu modeliu.
+\end{itemize}
+
+\subsection{Laukiami rezultatai}
+
+Šiuo darbu yra tikimasi įvertinti potencialius pokyčius, pradėjus masiškai naudoti DLT technologijas tiekimo grandinėse. Vienas iš galimų rezultatų gali būti sudaryti tiekimo grandinės modelį, pilnai įgalinant DLT gerąsias savybes, šį modelį palyginti su tradiciniais modeliais, nustatyti tinkamas modeliui funkcionuoti sąlygas, išskirti privalumus ir trūkumus. 
+
+\subsection{Tyrimo metodas}
+
+Tyrimo metu bus naudojama mokslinės literatūros analizės bei modelio sudarymo ir jo taikymo metodai.
+
+\subsection{Numatomas darbo atlikimo procesas}
+
+Iš pradžių bus apžvelgiama tiekimo grandinės dalykinė sritis, apsibrėžiama tinkama jos sąvoka, aukšto lygio tiekimo grandinės ir joje esančių procesų modeliai. Nagrinėjama tiekimo grandinės svarba, šiandienos problemos.
+
+Toliau bus analizuojama DLT sąvoka, savybės ir idėjos, tiriamos ir lyginamos DLT technologijų rūšys: blokų grandinė ir DAG paremta 2017 metais pristatyta ir vis dar tobulinama IOTA platforma.
+
+Trečioje darbo dalyje bus aiškinamasi, kaip IOTA gali būti panaudojama tiekimo grandinėse, kokios jos savybės tinkamos ir pritaikomos tiekimo grandinėse, logistikoje. Kadangi IOTA yra labai glaudžiai susijusi su daiktų internetu, šiek tiek bus įtraukta ir šios tematikos, tačiau tik tiek, kiek jos bus reikalinga tiekimo grandinių kontekste.
+
+Galutinėje dalyje bus pristatomi tyrimo rezultatai ir išvados.
+
+\subsection{Aktualūs literatūros šaltiniai}
+
+Darbe bus naudojama mokslinį pagrindą turinti literatūra: tezės, straipsniai iš mokslo žurnalų, knygos. Tačiau taip pat bus naudojami konsultacinių, komercinių ir analitikos įmonių raportai, valstybinių organizacijų ir statistikos duomenis suteikiantys tinklapiai.
+Darbe bus vengiama nerecenzuojamų šaltinių.
+Kadangi darbu siekiama mokslinio naujumo, dauguma šaltinių bus naudojama iš pastarojo dešimtmečio.
+
+Pagrindiniai literatūros šaltiniai bus apie tiekimo grandines, logistiką, DLT technologijas, tokias kaip blokų grandinė, IOTA, bei dalis apie daiktų internetą. Keletas pagrindinių šaltinių pavyzdžių:
+\begin{itemize}
+    \item Martin Christopher. Logistics \& supply chain management. Pearson UK, 2016.
+    \item Serguei Popov. The Tangle, 2018. Version 1.4.3
+    \item Saveen A Abeyratne ir Radmehr P Monfared. Blockchain ready manufacturing supplychain using distributed ledger, 2016.
+    \item Quentin Bramas. The stability and the security of the tangle, 2018.
+    \item Kari Korpela, Jukka Hallikas ir Tomi Dahlberg. Digital supply chain transformation toward blockchain integration. proceedings of the 50th Hawaii international conference on system sciences, 2017.
+\end{itemize}
+
+\end{document}
